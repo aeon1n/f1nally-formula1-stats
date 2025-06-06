@@ -1,21 +1,34 @@
 <script lang="ts">
+	import { getDrivers } from '$lib/api';
 	import HomeDriver from '$lib/components/layout/HomeDriver.svelte';
+	import type { Driver } from '$lib/types';
+	import { onMount } from 'svelte';
 
-	const Driver = HomeDriver;
+	const DriverItem = HomeDriver;
+
+	let drivers: Driver[] = [];
+
+	onMount(async () => {
+		drivers = await getDrivers();
+	});
 </script>
 
 <div class="mt-6">
 	<h2 class="text-2xl font-bold">Drivers</h2>
-	<Driver
-		firstName="Lewis"
-		lastName="Hamilton"
-		img="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/hamilton"
-		nationality="🇬🇧"
-	/>
-	<Driver
-		firstName="Charles"
-		lastName="Leclerc"
-		img="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/drivers/2025Drivers/leclerc"
-		nationality="🇲🇨"
-	/>
+	<!-- 	<Driver firstName="Lando" lastName="Norris" teamKey="mclaren" />
+	<Driver firstName="Oscar" lastName="Piastri" teamKey="mclaren" />
+	<Driver firstName="Max" lastName="Verstappen" teamKey="redbull" />
+	<Driver firstName="Yuki" lastName="Tsunoda" teamKey="redbull" />
+	<Driver firstName="Lewis" lastName="Hamilton" teamKey="ferrari" />
+	<Driver firstName="Charles" lastName="Leclerc" teamKey="ferrari" /> -->
+
+	{#each drivers as driver}
+		<DriverItem
+			firstName={driver.givenName}
+			lastName={driver.familyName}
+			teamKey={driver.constructor}
+		/>
+
+		{console.log(driver.constructor)}
+	{/each}
 </div>
