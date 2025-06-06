@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+	import HomeDrivers from '$lib/components/layout/HomeDrivers.svelte';
+	import HomeNextRace from '$lib/components/layout/HomeNextRace.svelte';
+	import HomeRaces from '$lib/components/layout/HomeRaces.svelte';
+</script>
+
+<!--HOME-->
+<HomeNextRace />
+<HomeDrivers />
+<HomeRaces />
