@@ -29,3 +29,16 @@ export async function getDrivers(): Promise<Driver[]> {
 
 	return drivers;
 }
+
+export async function getDriverStandings(): Promise<Standing[]> {
+	const res = await fetch(`${api}/f1/2025/driverstandings/`);
+
+	if (!res.ok) {
+		throw new Error('Failed to fetch standings!');
+	}
+
+	const data = await res.json();
+
+	const standings: Standing[] = data.MRData.StandingsTable.StandingsLists[0].DriverStandings;
+	return standings;
+}

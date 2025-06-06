@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import 'tailwindcss';
+@source inline("from-cyan-500 from-green-600 from-blue-400 from-blue-600 from-white from-emerald-700 from-pink-400 bg-cyan-500 bg-green-600 bg-blue-400 bg-blue-600 bg-white bg-emerald-700 bg-pink-400");
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 

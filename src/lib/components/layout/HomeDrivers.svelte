@@ -28,7 +28,5 @@
 			lastName={driver.familyName}
 			teamKey={driver.constructor}
 		/>
-
-		{console.log(driver.constructor)}
 	{/each}
 </div>

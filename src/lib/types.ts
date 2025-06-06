@@ -9,6 +9,10 @@ export interface Driver {
 }
 
 export interface Standing {
+	position: string;
+	positionText: string;
+	points: string;
+	wins: string;
 	Driver: {
 		driverId: string;
 		code: string;

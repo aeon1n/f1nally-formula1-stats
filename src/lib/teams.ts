@@ -49,11 +49,11 @@ export const teams: Record<string, TeamInfo> = {
 					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/M/MAXVER01_Max_Verstappen/maxver01.png'
 			},
 			{
-				name: 'Yuki Tsunoda',
-				nationality: 'JP',
-				flag: '🇯🇵',
+				name: 'Liam Lawson',
+				nationality: 'NZ',
+				flag: '🇳🇿',
 				imgTransparent:
-					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/Y/YUKTSU01_Yuki_Tsunoda/yuktsu01.png'
+					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LIALAW01_Liam_Lawson/lialaw01.png'
 			}
 		]
 	},
@@ -113,7 +113,7 @@ export const teams: Record<string, TeamInfo> = {
 			},
 			{
 				name: 'Carlos Sainz',
-				nationality: 'SP',
+				nationality: 'ES',
 				flag: '🇪🇸',
 				imgTransparent:
 					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/C/CARSAI01_Carlos_Sainz/carsai01.png'
@@ -138,6 +138,90 @@ export const teams: Record<string, TeamInfo> = {
 				flag: '🇯🇵',
 				imgTransparent:
 					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/Y/YUKTSU01_Yuki_Tsunoda/yuktsu01.png'
+			}
+		]
+	},
+	haasf1team: {
+		name: 'Haas F1 Team',
+		color: 'white',
+		logo: 'https://media.formula1.com/content/dam/fom-website/teams/2025/haas-logo.png',
+		drivers: [
+			{
+				name: 'Esteban Ocon',
+				nationality: 'FR',
+				flag: '🇫🇷',
+				imgTransparent:
+					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/E/ESTOCO01_Esteban_Ocon/estoco01.png'
+			},
+			{
+				name: 'Oliver Bearman',
+				nationality: 'UK',
+				flag: '🇬🇧',
+				imgTransparent:
+					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/O/OLIBEA01_Oliver_Bearman/olibea01.png'
+			}
+		]
+	},
+	sauber: {
+		name: 'Sauber',
+		color: 'green-600',
+		logo: 'https://media.formula1.com/content/dam/fom-website/teams/2025/kick-sauber-logo.png',
+		drivers: [
+			{
+				name: 'Nico Hülkenberg',
+				nationality: 'DE',
+				flag: '🇩🇪',
+				imgTransparent:
+					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/N/NICHUL01_Nico_Hulkenberg/nichul01.png'
+			},
+			{
+				name: 'Gabriel Bortoleto',
+				nationality: 'BR',
+				flag: '🇧🇷',
+				imgTransparent:
+					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GABBOR01_Gabriel_Bortoleto/gabbor01.png'
+			}
+		]
+	},
+	astonmartin: {
+		name: 'Aston Martin',
+		color: 'emerald-700',
+		logo: 'https://media.formula1.com/content/dam/fom-website/teams/2025/aston-martin-logo.png',
+		drivers: [
+			{
+				name: 'Fernando Alonso',
+				nationality: 'ES',
+				flag: '🇪🇸',
+				imgTransparent:
+					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/F/FERALO01_Fernando_Alonso/feralo01.png'
+			},
+			{
+				name: 'Lance Stroll',
+				nationality: 'CA',
+				flag: '🇨🇦',
+				imgTransparent:
+					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LANSTR01_Lance_Stroll/lanstr01.png'
+			}
+		]
+	},
+	alpinef1team: {
+		name: 'Apline F1 Team',
+		color: 'pink-400',
+		logo: 'https://media.formula1.com/content/dam/fom-website/teams/2025/alpine-logo.png',
+		drivers: [
+			{
+				name: 'Pierre Gasly',
+				nationality: 'FR',
+				flag: '🇫🇷',
+				imgTransparent:
+					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/P/PIEGAS01_Pierre_Gasly/piegas01.png'
+			},
+			{
+				name: 'Franco Colapinto',
+				nationality: 'AR',
+				flag: '🇦🇷',
+				imgTransparent:
+					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/F/FRACOL01_Franco_Colapinto/fracol01.png'
 			}
 		]
 	}

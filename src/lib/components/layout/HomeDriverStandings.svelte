@@ -1,12 +1,27 @@
-<script>
+<script lang="ts">
+	import { getDriverStandings } from '$lib/api';
+	import type { Standing } from '$lib/types';
 	import HomeDriverStanding from './HomeDriverStanding.svelte';
+
+	import { onMount } from 'svelte';
+
+	let standings: Standing[] = [];
+
+	onMount(async () => {
+		standings = await getDriverStandings();
+	});
 </script>
 
 <div class="mt-6">
 	<h2 class="text-2xl font-bold">Standings</h2>
 	<div class="mt-4 flex w-full flex-col gap-3">
-		<HomeDriverStanding position={1} driverName="Oscar Piastri" teamKey="mclaren" points={144} />
-		<HomeDriverStanding position={2} driverName="Lando Norris" teamKey="mclaren" points={122} />
-		<HomeDriverStanding position={3} driverName="Max Verstappen" teamKey="redbull" points={90} />
+		{#each standings as standing, i}
+			<HomeDriverStanding
+				position={i + 1}
+				driverName={`${standing.Driver.givenName} ${standing.Driver.familyName}`}
+				teamKey={standing.Constructors?.[0]?.name.toLowerCase().replace(/\s+/g, '') || ''}
+				points={Number(standing.points)}
+			/>
+		{/each}
 	</div>
 </div>

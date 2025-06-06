@@ -9,12 +9,16 @@
 	const driver = team?.drivers.find((d) => d.name === driverName);
 </script>
 
-<div class={`h-13 w-full rounded-md bg-${team?.color ?? 'bg-gray-500'}`}>
+<div
+	class={`h-13 w-full rounded-md bg-${team?.color ?? 'bg-gray-500'} ${
+		team?.name === 'Haas F1 Team' ? 'text-red-600' : 'text-white'
+	}`}
+>
 	<div class="flex w-full items-center gap-2 px-3">
 		<h2
 			class="flex shrink-0 grow-0 basis-[10%] items-center justify-center text-3xl leading-none font-black md:basis-[3%]"
 		>
-			<span class="text-4xl text-white drop-shadow-md">{position}</span>
+			<span class="text-4xl drop-shadow-md">{position}</span>
 			<sup class="align-super text-base font-bold drop-shadow-md">
 				{#if position === 1}
 					st
