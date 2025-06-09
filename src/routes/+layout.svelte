@@ -5,24 +5,33 @@
 </script>
 
 <header
-	class="fixed top-0 left-0 z-50 flex w-full items-center justify-between border-b-2 border-black/50 bg-black/75 px-6 py-5 text-white shadow-xl backdrop-blur-lg transition-all duration-300"
+	class="fixed top-0 left-0 z-50 flex w-full items-center justify-between border-b-2 border-black/50 bg-black/75 px-6 py-4 text-white shadow-xl backdrop-blur-lg transition-all duration-300"
 >
 	<div>
 		<h1 class="text-lg font-bold text-red-600">f1<span class="text-white"> stats</span></h1>
 	</div>
 
-	<nav class="text-md font-heading flex items-center gap-4 font-bold text-white/90">
+	<nav
+		class="font-heading flex items-center gap-3 text-sm font-bold text-white/80 sm:gap-6 sm:text-base"
+	>
 		<a
 			href="/"
-			class="text-red-600 transition-colors duration-200 hover:scale-101 hover:text-red-600">Home</a
+			class="rounded-md px-3 py-1.5 transition-all duration-150 hover:bg-red-600 hover:text-white focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
+			>Home</a
 		>
-		<a href="/races" class="transition-colors duration-200 hover:scale-101 hover:text-red-600"
+		<a
+			href="/drivers"
+			class="rounded-md px-3 py-1.5 transition-all duration-150 hover:bg-red-600 hover:text-white focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
 			>Drivers</a
 		>
-		<a href="/races" class="transition-colors duration-200 hover:scale-101 hover:text-red-600"
+		<a
+			href="/races"
+			class="rounded-md px-3 py-1.5 transition-all duration-150 hover:bg-red-600 hover:text-white focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
 			>Races</a
 		>
-		<a href="/about" class="transition-colors duration-200 hover:scale-101 hover:text-red-600"
+		<a
+			href="/standings"
+			class="rounded-md px-3 py-1.5 transition-all duration-150 hover:bg-red-600 hover:text-white focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
 			>Standings</a
 		>
 	</nav>

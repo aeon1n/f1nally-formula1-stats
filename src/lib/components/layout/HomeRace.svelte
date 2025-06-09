@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { gpName, gpYear, gpImg, gpDate } = $props();
+	let { gpName, gpYear, gpImg, gpDate, current } = $props();
 </script>
 
 <div

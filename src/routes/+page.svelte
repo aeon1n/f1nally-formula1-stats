@@ -7,6 +7,6 @@
 
 <!--HOME-->
 <HomeNextRace />
-<HomeDrivers />
 <HomeRaces />
+<HomeDrivers />
 <HomeDriverStandings />

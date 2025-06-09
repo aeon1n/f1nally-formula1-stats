@@ -9,19 +9,15 @@
 	let drivers: Driver[] = [];
 
 	onMount(async () => {
-		drivers = await getDrivers();
+		const fetchedDrivers = await getDrivers();
+		drivers = fetchedDrivers
+			.filter((d) => d.familyName.toLowerCase() !== 'doohan')
+			.sort((a, b) => a.constructor.localeCompare(b.constructor));
 	});
 </script>
 
-<div class="mt-6">
-	<h2 class="text-2xl font-bold">Drivers</h2>
-	<!-- 	<Driver firstName="Lando" lastName="Norris" teamKey="mclaren" />
-	<Driver firstName="Oscar" lastName="Piastri" teamKey="mclaren" />
-	<Driver firstName="Max" lastName="Verstappen" teamKey="redbull" />
-	<Driver firstName="Yuki" lastName="Tsunoda" teamKey="redbull" />
-	<Driver firstName="Lewis" lastName="Hamilton" teamKey="ferrari" />
-	<Driver firstName="Charles" lastName="Leclerc" teamKey="ferrari" /> -->
-
+<h2 class="mt-6 mb-4 text-2xl font-bold">Drivers</h2>
+<div class="grid gap-4 lg:grid-cols-2">
 	{#each drivers as driver}
 		<DriverItem
 			firstName={driver.givenName}

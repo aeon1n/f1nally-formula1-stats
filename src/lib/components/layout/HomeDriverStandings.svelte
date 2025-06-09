@@ -8,7 +8,7 @@
 	let standings: Standing[] = [];
 
 	onMount(async () => {
-		standings = await getDriverStandings();
+		standings = (await getDriverStandings()).slice(0, 5);
 	});
 </script>
 
