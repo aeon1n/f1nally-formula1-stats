@@ -9,6 +9,18 @@
 	--font-heading: 'Montserrat', 'sans-serif';
 }
 
+@layer utilities {
+	/* Chrome, Safari and Opera */
+	.scrollbar-hidden::-webkit-scrollbar {
+		display: none;
+	}
+
+	.scrollbar-hidden {
+		scrollbar-width: none; /* Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+	}
+}
+
 html {
 	font-family: 'Raleway', sans-serif;
 	font-weight: medium;

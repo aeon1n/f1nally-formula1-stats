@@ -5,7 +5,7 @@
 </script>
 
 <header
-	class="fixed top-0 left-0 z-50 flex w-full items-center justify-between border-b-2 border-black/50 bg-black/75 px-6 py-4 text-white shadow-xl backdrop-blur-lg transition-all duration-300"
+	class="fixed top-0 left-0 z-50 flex w-full items-center justify-between border-b-2 border-black/50 bg-black/75 px-6 px-6 py-4 text-white shadow-xl backdrop-blur-lg transition-all duration-300 md:px-12 xl:px-24 2xl:px-48"
 >
 	<div>
 		<h1 class="text-lg font-bold text-red-600">f1<span class="text-white"> stats</span></h1>
@@ -36,6 +36,6 @@
 		>
 	</nav>
 </header>
-<main class="px-6 py-20">
+<main class=" py-20">
 	{@render children()}
 </main>

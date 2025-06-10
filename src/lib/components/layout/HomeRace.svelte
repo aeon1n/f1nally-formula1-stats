@@ -3,7 +3,9 @@
 </script>
 
 <div
-	class="group relative min-h-60 cursor-pointer rounded-md bg-center duration-200 ease-in-out hover:scale-101"
+	class="{current
+		? 'current-gp '
+		: ''} group relative min-h-60 cursor-pointer rounded-md bg-center duration-200 ease-in-out hover:scale-101"
 	style="background-image: url('{gpImg}')"
 >
 	<div
