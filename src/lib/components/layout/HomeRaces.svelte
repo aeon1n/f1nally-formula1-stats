@@ -41,11 +41,13 @@
 	}
 </script>
 
-{#if currentRace}
-	<HomeNextRace {...currentRace} />
-{:else}
-	<p>Loading next race...</p>
-{/if}
+<div class="hidden md:block">
+	{#if currentRace}
+		<HomeNextRace {...currentRace} />
+	{:else}
+		<p>Loading next race...</p>
+	{/if}
+</div>
 
 <div
 	id="race-scroll"

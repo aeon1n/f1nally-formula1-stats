@@ -16,13 +16,17 @@
 	});
 </script>
 
-<h2 class="mt-6 mb-4 text-2xl font-bold">Drivers</h2>
-<div class="grid gap-4 lg:grid-cols-2">
-	{#each drivers as driver}
-		<DriverItem
-			firstName={driver.givenName}
-			lastName={driver.familyName}
-			teamKey={driver.constructor}
-		/>
-	{/each}
+<div id="drivers">
+	<h2 class="mt-6 mb-4 text-2xl font-bold">Drivers</h2>
+	<div class="grid gap-4 lg:grid-cols-2">
+		{#each drivers as driver}
+			<a href={`/drivers/${driver.familyName.toLocaleLowerCase()}`}>
+				<DriverItem
+					firstName={driver.givenName}
+					lastName={driver.familyName}
+					teamKey={driver.constructor}
+				/>
+			</a>
+		{/each}
+	</div>
 </div>

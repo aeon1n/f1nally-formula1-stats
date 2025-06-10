@@ -1,12 +1,12 @@
 // src/lib/teams.ts
 
-type Driver = {
+export type Driver = {
 	name: string;
 	imgTransparent: string;
 	nationality: string;
 };
 
-type TeamInfo = {
+export type TeamInfo = {
 	name: string;
 	color: string;
 	logo: string;

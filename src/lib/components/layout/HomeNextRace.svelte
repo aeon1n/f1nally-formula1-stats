@@ -98,7 +98,7 @@
 					<span class="min-w-[25%] font-bold">Practice 2</span>
 					<span class="text-gray-300">Fri</span><span
 						class="min-w-[40%] rounded-lg bg-neutral-800 px-4 py-1 text-center font-bold text-white"
-						>{SecondPractice.time.slice(0, 5) && '00:00'}</span
+						>{SecondPractice.time.slice(0, 5)}</span
 					>
 				</li>
 				<li class="flex justify-between">
