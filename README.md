@@ -27,11 +27,11 @@ A sleek and fast Formula 1 statistics web app built with **SvelteKit**, **TypeSc
 ### 🖥 Desktop-Ansichten
 
 <p float="left">
-  <img src="./static/screenshots/schedule.png" alt="Formula 1 Race Schedule" width="250"/>
-  <img src="./static/screenshots/grid.png" alt="Drivers of the 2025 Saison" width="250"/>
-  <img src="./static/screenshots/driver.png" alt="Driver Detail of Lewis Hamilton" width="250"/>
-  <img src="./static/screenshots/standings.png" alt="Driver Scoreboard Saison 2025" width="250"/>
-  <img src="./static/screenshots/constructors.png" alt="Constructor Top 3 2025 Saison" width="250"/>
+  <img src="./static/screenshots/schedule.png" alt="Formula 1 Race Schedule" width="300"/>
+  <img src="./static/screenshots/grid.png" alt="Drivers of the 2025 Saison" width="300"/>
+  <img src="./static/screenshots/driver.png" alt="Driver Detail of Lewis Hamilton" width="300"/>
+  <img src="./static/screenshots/standings.png" alt="Driver Scoreboard Saison 2025" width="300"/>
+  <img src="./static/screenshots/constructors.png" alt="Constructor Top 3 2025 Saison" width="300"/>
 </p>
 
 <p>
