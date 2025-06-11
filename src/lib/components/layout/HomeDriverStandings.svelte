@@ -12,7 +12,7 @@
 	});
 </script>
 
-<div class="mt-6">
+<div class="mt-6" id="standings">
 	<h2 class="text-2xl font-bold">Standings</h2>
 	<div class="mt-4 flex w-full flex-col gap-3">
 		{#each standings as standing, i}

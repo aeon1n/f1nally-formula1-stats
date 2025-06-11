@@ -10,38 +10,44 @@
 </script>
 
 <div
-	class="w-full rounded-md bg-gradient-to-t from-{team?.color} via-neutral-900 to-neutral-900 px-8 py-4 duration-200 ease-in-out hover:scale-102"
+	class="w-full rounded-xl bg-gradient-to-b from-{team?.color} via-neutral-900 to-neutral-900 px-6 py-5 shadow-md transition-transform duration-200 ease-in-out hover:scale-[1.02]"
 >
-	<div class="flex w-full justify-between">
-		<h2 class="text-3xl font-black">#{position}</h2>
-		<div class="flex flex-row gap-2">
-			<span class="text-2xl font-black">{points}</span>
-			<span
-				class="flex items-center justify-center rounded-md bg-black px-2 py-1 text-sm font-bold text-gray-300 uppercase"
-				>Pts</span
-			>
+	<!-- Position and Points -->
+	<div class="flex w-full items-center justify-between">
+		<h2 class="text-3xl font-extrabold text-white">#{position}</h2>
+		<div class="flex items-center gap-2">
+			<span class="text-2xl font-black text-white">{points}</span>
+			<span class="rounded-md bg-black px-2 py-1 text-sm font-semibold text-gray-300 uppercase">
+				Pts
+			</span>
 		</div>
 	</div>
-	<div class="mt-4 flex justify-between">
-		<div class="flex gap-3">
-			<span class="block h-8 w-[6px] rounded bg-{team?.color}"></span>
-			<h2 class="text-2xl font-bold">{team?.name}</h2>
+
+	<!-- Team Name & Logo -->
+	<div class="mt-5 flex items-center justify-between">
+		<div class="flex items-center gap-3">
+			<span class="block h-8 w-[6px] rounded-full bg-{team?.color}"></span>
+			<h2 class="text-2xl font-bold text-white">{team?.name}</h2>
 		</div>
-		<img src={team?.logo} class="w-8" alt={`${team?.name} Logo`} />
+		<img src={team?.logo} class="h-10 w-10 object-contain" alt={`${team?.name} Logo`} />
 	</div>
-	<div class="mt-3 flex gap-4">
+
+	<!-- Drivers -->
+	<div class="mt-4 grid grid-cols-2 gap-4">
 		{#each team?.drivers ?? [] as driver}
 			<div
-				class="flex basis-1/2 flex-col rounded-br-md border-r-2 border-b-2 border-neutral-400 py-2"
+				class="flex hidden flex-col items-start rounded-md border border-neutral-700 bg-neutral-800/30 px-3 py-2 text-white md:block"
 			>
 				<a href={`/drivers/${driver.name.split(' ')[1]}`}>
-					<span>{driver.name.split(' ')[0]}</span>
-					<span class="text-xl font-bold">{driver.name.split(' ')[1]}</span>
+					<span class="text-sm">{driver.name.split(' ')[0]}</span>
+					<span class="text-lg font-semibold">{driver.name.split(' ')[1]}</span>
 				</a>
 			</div>
 		{/each}
 	</div>
-	<div class="mt-2 flex w-full items-center justify-center">
-		<img src={team?.carImg} alt={`${team?.name} F1 Car`} />
+
+	<!-- Car Image -->
+	<div class="mt-4 flex w-full items-center justify-center">
+		<img src={team?.carImg} alt={`${team?.name} F1 Car`} class="max-h-32 object-contain" />
 	</div>
 </div>

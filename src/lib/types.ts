@@ -6,6 +6,7 @@ export interface Driver {
 	familyName: string;
 	dateOfBirth: Date;
 	nationality: string;
+	permanentNumber?: string;
 }
 
 export interface Standing {
@@ -13,15 +14,7 @@ export interface Standing {
 	positionText: string;
 	points: string;
 	wins: string;
-	Driver: {
-		driverId: string;
-		code: string;
-		url: string;
-		givenName: string;
-		familyName: string;
-		dateOfBirth: string;
-		nationality: string;
-	};
+	Driver: Driver;
 	Constructors?: { name: string }[];
 }
 

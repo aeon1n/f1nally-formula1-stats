@@ -41,7 +41,7 @@
 	}
 </script>
 
-<div class="hidden md:block">
+<div class="hidden md:block" id="races">
 	{#if currentRace}
 		<HomeNextRace {...currentRace} />
 	{:else}

@@ -4,6 +4,7 @@ export type Driver = {
 	name: string;
 	imgTransparent: string;
 	nationality: string;
+	desc?: string;
 };
 
 export type TeamInfo = {
@@ -66,7 +67,8 @@ export const teams: Record<string, TeamInfo> = {
 				name: 'Lewis Hamilton',
 				nationality: 'GB',
 				imgTransparent:
-					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png'
+					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png',
+				desc: 'Lewis Hamilton is a seven-time Formula 1 World Champion and one of the most successful drivers in the sport’s history.<br /><br />Since his debut in 2007, he has set new standards with teams like McLaren and Mercedes, breaking numerous records – including the most pole positions and Grand Prix victories.<br /><br />Off the track, Hamilton is a prominent advocate for social justice, diversity in motorsport, and sustainable innovation.'
 			},
 			{
 				name: 'Charles Leclerc',
@@ -163,13 +165,15 @@ export const teams: Record<string, TeamInfo> = {
 				name: 'Nico Hülkenberg',
 				nationality: 'DE',
 				imgTransparent:
-					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/N/NICHUL01_Nico_Hulkenberg/nichul01.png'
+					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/N/NICHUL01_Nico_Hulkenberg/nichul01.png',
+				desc: 'Nico Hülkenberg is a German Formula 1 driver known for his consistency and technical finesse.<br /><br />Since his debut in 2010, he has raced for several teams including Williams, Force India, Renault, and currently Haas Racing.<br /><br />Despite numerous strong performances, a podium finish has so far eluded him – a unique record in F1 history.<br /><br />Alongside his experience, Hülkenberg has also contributed valuable insight as a reserve driver for top teams like Mercedes and Racing Point.'
 			},
 			{
 				name: 'Gabriel Bortoleto',
 				nationality: 'BR',
 				imgTransparent:
-					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GABBOR01_Gabriel_Bortoleto/gabbor01.png'
+					'https://media.formula1.com/d_driver_fallback_image.png/content/dam/fom-website/drivers/G/GABBOR01_Gabriel_Bortoleto/gabbor01.png',
+				desc: 'Gabriel Bortoleto is a rising Brazilian racing driver currently gaining attention as part of the McLaren Driver Development Programme.<br /><br />After winning the FIA Formula 3 title in 2023, he is considered one of the most promising talents of his generation.<br /><br />Bortoleto impresses with his race intelligence, composure under pressure, and ability to consistently perform at a high level.'
 			}
 		]
 	},
