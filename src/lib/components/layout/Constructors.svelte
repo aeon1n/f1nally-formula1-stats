@@ -12,7 +12,8 @@
 	});
 </script>
 
-<h1 class="mt-8 mb-4 text-2xl font-bold">Constructors Standings</h1>
+<h2 class="mt-8 mb-2 text-3xl font-extrabold text-gray-200">Team Rankings</h2>
+<p class="mb-6 text-lg text-gray-400">Up-to-date standings of all F1 constructors.</p>
 <div class="flex flex-col gap-3 md:flex-row">
 	{#each constructors ?? [] as constructor}
 		<ConstructorItem

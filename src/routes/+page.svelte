@@ -3,6 +3,7 @@
 	import HomeDrivers from '$lib/components/layout/HomeDrivers.svelte';
 	import HomeDriverStandings from '$lib/components/layout/HomeDriverStandings.svelte';
 	import HomeRaces from '$lib/components/layout/HomeRaces.svelte';
+	import TrackMap from '$lib/components/layout/TrackMap.svelte';
 </script>
 
 <!--HOME-->
@@ -12,4 +13,5 @@
 	<HomeDrivers />
 	<HomeDriverStandings />
 	<Constructors />
+	<TrackMap />
 </div>

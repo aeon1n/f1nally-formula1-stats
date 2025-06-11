@@ -13,7 +13,10 @@
 </script>
 
 <div class="mt-6" id="standings">
-	<h2 class="text-2xl font-bold">Standings</h2>
+	<h2 class="mb-2 text-3xl font-extrabold text-gray-200">Driver Rankings</h2>
+	<p class="mb-6 text-lg text-gray-400">
+		Current points and positions for all drivers this season.
+	</p>
 	<div class="mt-4 flex w-full flex-col gap-3">
 		{#each standings as standing, i}
 			<HomeDriverStanding

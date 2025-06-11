@@ -7,3 +7,9 @@ export async function getRaces() {
 
 	return data.MRData.RaceTable.Races as Race[];
 }
+export async function getTracks() {
+	const res = await fetch(`${api}f1/2025/`);
+	const data = await res.json();
+
+	return data;
+}

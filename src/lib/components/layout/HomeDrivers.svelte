@@ -17,7 +17,10 @@
 </script>
 
 <div id="drivers">
-	<h2 class="mt-6 mb-4 text-2xl font-bold">Drivers</h2>
+	<h2 class="mb-2 text-3xl font-extrabold text-gray-200">Meet the Grid</h2>
+	<p class="mb-6 text-lg text-gray-400">
+		Explore the personalities, stats, and stories behind each F1 driver.
+	</p>
 	<div class="grid gap-4 lg:grid-cols-2">
 		{#each drivers as driver}
 			<a href={`/drivers/${driver.familyName.toLocaleLowerCase()}`}>

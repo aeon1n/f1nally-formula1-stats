@@ -21,16 +21,16 @@
 		class="font-heading flex items-center gap-2 text-sm font-semibold text-white/80 sm:gap-4 sm:text-base md:gap-6"
 	>
 		<a
-			href="/#drivers"
-			class="rounded-md px-3 py-1.5 transition-all duration-150 hover:bg-red-600 hover:text-white focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
-		>
-			Drivers
-		</a>
-		<a
 			href="/#races"
 			class="rounded-md px-3 py-1.5 transition-all duration-150 hover:bg-red-600 hover:text-white focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
 		>
 			Races
+		</a>
+		<a
+			href="/#drivers"
+			class="rounded-md px-3 py-1.5 transition-all duration-150 hover:bg-red-600 hover:text-white focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
+		>
+			Drivers
 		</a>
 		<a
 			href="/#standings"
