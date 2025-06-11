@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import 'tailwindcss';
-@source inline("border-orange-500 border-teal-400 border-green-600 border-blue-400 border-blue-600 border-white border-emerald-700 border-pink-400 border-red-500 border-blue-800 bg-blue-800 bg-red-500 bg-orange-500 bg-teal-400 bg-green-600 bg-blue-400 bg-blue-600 bg-white bg-emerald-700 bg-pink-400");
+@source inline("from-orange-500 from-teal-400 from-red-500 border-orange-500 border-teal-400 border-green-600 border-blue-400 border-blue-600 border-white border-emerald-700 border-pink-400 border-red-500 border-blue-800 bg-blue-800 bg-red-500 bg-orange-500 bg-teal-400 bg-green-600 bg-blue-400 bg-blue-600 bg-white bg-emerald-700 bg-pink-400");
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 

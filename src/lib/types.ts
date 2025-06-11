@@ -39,14 +39,14 @@ export interface Circuit {
 	Location: Location;
 }
 
-interface Location {
+export interface Location {
 	lat: string;
 	long: string;
 	locality: string;
 	country: string;
 }
 
-interface Session {
+export interface Session {
 	date: string;
 	time: string;
 }
@@ -65,4 +65,12 @@ export interface Race {
 	Qualifying: Session;
 	Sprint?: Session;
 	SprintQualifying?: Session;
+}
+
+export interface ConstructorStandings {
+	position: string;
+	positionText: string;
+	points: string;
+	wins: string;
+	Constructor: Constructor;
 }

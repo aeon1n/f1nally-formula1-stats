@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Constructors from '$lib/components/layout/Constructors.svelte';
 	import HomeDrivers from '$lib/components/layout/HomeDrivers.svelte';
 	import HomeDriverStandings from '$lib/components/layout/HomeDriverStandings.svelte';
 	import HomeRaces from '$lib/components/layout/HomeRaces.svelte';
@@ -10,4 +11,5 @@
 	<HomeRaces />
 	<HomeDrivers />
 	<HomeDriverStandings />
+	<Constructors />
 </div>

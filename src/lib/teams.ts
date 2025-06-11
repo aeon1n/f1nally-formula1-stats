@@ -10,6 +10,7 @@ export type TeamInfo = {
 	name: string;
 	color: string;
 	logo: string;
+	carImg?: string;
 	drivers: Driver[];
 };
 
@@ -18,6 +19,8 @@ export const teams: Record<string, TeamInfo> = {
 		name: 'McLaren',
 		color: 'orange-500',
 		logo: 'https://media.formula1.com/content/dam/fom-website/teams/2025/mclaren-logo.png',
+		carImg:
+			'https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/mclaren.png',
 		drivers: [
 			{
 				name: 'Oscar Piastri',
@@ -56,6 +59,8 @@ export const teams: Record<string, TeamInfo> = {
 		name: 'Ferrari',
 		color: 'red-500',
 		logo: 'https://media.formula1.com/content/dam/fom-website/teams/2025/ferrari-logo.png',
+		carImg:
+			'https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/ferrari.png',
 		drivers: [
 			{
 				name: 'Lewis Hamilton',
@@ -75,6 +80,8 @@ export const teams: Record<string, TeamInfo> = {
 		name: 'Mercedes',
 		color: 'teal-400',
 		logo: 'https://media.formula1.com/content/dam/fom-website/teams/2025/mercedes-logo.png',
+		carImg:
+			'https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2025/mercedes.png',
 		drivers: [
 			{
 				name: 'George Russell',
