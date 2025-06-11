@@ -24,13 +24,19 @@ A sleek and fast Formula 1 statistics web app built with **SvelteKit**, **TypeSc
 
 ## 📸 Screenshots
 
-_Real screenshots coming soon – for now:_
+### 🖥 Desktop-Ansichten
 
 <p float="left">
-  <img src="https://place-hold.it//1280x640 " alt="screenshot1" style="margin-right: 10px;" />
-  <img src="https://place-hold.it//1280x640 " alt="screenshot2" style="margin-right: 10px;" />
-  <img src="https://place-hold.it//1280x640 " alt="screenshot3" style="margin-right: 10px;" />
-  <img src="https://place-hold.it//1280x640 " alt="screenshot4" />
+  <img src="./static/screenshots/schedule.png" alt="Formula 1 Race Schedule" width="250"/>
+  <img src="./static/screenshots/grid.png" alt="Drivers of the 2025 Saison" width="250"/>
+  <img src="./static/screenshots/driver.png" alt="Driver Detail of Lewis Hamilton" width="250"/>
+  <img src="./static/screenshots/standings.png" alt="Driver Scoreboard Saison 2025" width="250"/>
+  <img src="./static/screenshots/constructors.png" alt="Constructor Top 3 2025 Saison" width="250"/>
+</p>
+
+<p>
+  <img src="./static/screenshots/mobile1.png" alt="Mobile View 1" height="300"/>
+  <img src="./static/screenshots/mobile2.png" alt="Mobile View 2" height="300"/>
 </p>
 
 ---
