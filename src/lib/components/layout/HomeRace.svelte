@@ -5,7 +5,7 @@
 <div
 	class="{current
 		? 'current-gp '
-		: ''} group relative min-h-60 cursor-pointer rounded-md bg-center duration-200 ease-in-out hover:scale-101"
+		: ''} group relative min-h-75 cursor-pointer rounded-md bg-center duration-200 ease-in-out hover:scale-101"
 	style="background-image: url('{gpImg}')"
 >
 	<div
@@ -14,7 +14,14 @@
 	<div
 		class="absolute inset-0 z-20 flex h-full w-full flex-col items-center justify-center text-4xl font-bold"
 	>
-		{gpName}
+		{#if current}
+			<div
+				class="absolute top-2 left-0 mt-2 mb-2 rounded-lg rounded-l-none bg-green-500 px-6 py-2 text-xs text-green-950 md:text-sm"
+			>
+				Next Round
+			</div>
+		{/if}
+		<span>{gpName}</span>
 		<span class="block text-5xl font-black">{gpYear}</span>
 		<div class="mt-2 rounded-full bg-black px-3 py-1 text-xs">{gpDate}</div>
 	</div>

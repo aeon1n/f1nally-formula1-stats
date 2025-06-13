@@ -31,7 +31,7 @@
 			<div class="flex items-center gap-3">
 				<span class="block h-14 w-[6px] rounded bg-{team?.color}"></span>
 				<div class="flex flex-col">
-					<h2 class="text-md font-semibold tracking-wide text-neutral-200 md:text-lg">
+					<h2 class="font-semibold tracking-wide text-neutral-200 md:text-lg">
 						{firstName}
 						<span class="block text-xl font-extrabold text-white drop-shadow md:text-2xl"
 							>{lastName}</span
@@ -40,7 +40,8 @@
 				</div>
 			</div>
 			<div>
-				<span class="fi fi-{driver?.nationality.toLowerCase()} rounded-sm text-4xl drop-shadow"
+				<span
+					class="fi fi-{driver?.nationality.toLowerCase()} rounded-sm text-2xl drop-shadow md:text-4xl"
 				></span>
 			</div>
 		</div>

@@ -51,9 +51,9 @@
 </script>
 
 <div class="mt-8">
-	<h2 class="mb-2 text-3xl font-extrabold text-gray-200">F1 Circuits Worldwide</h2>
-	<p class="mb-6 text-lg text-gray-400">
-		Discover and explore Formula 1 tracks from every corner of the globe.
+	<h2 class="mb-2 text-2xl font-extrabold text-gray-200 md:text-3xl">F1 Circuits Worldwide</h2>
+	<p class="mb-6 font-semibold text-gray-400 md:text-lg">
+		Discover all Formula 1 tracks around globe.
 	</p>
 	<div class="flex flex-col gap-6 md:flex-row">
 		<!-- Map -->

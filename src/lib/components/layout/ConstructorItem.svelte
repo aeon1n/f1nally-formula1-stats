@@ -14,29 +14,35 @@
 >
 	<!-- Position and Points -->
 	<div class="flex w-full items-center justify-between">
-		<h2 class="text-3xl font-extrabold text-white">#{position}</h2>
+		<h2 class="text-2xl font-extrabold text-white md:text-3xl">#{position}</h2>
 		<div class="flex items-center gap-2">
 			<span class="text-2xl font-black text-white">{points}</span>
-			<span class="rounded-md bg-black px-2 py-1 text-sm font-semibold text-gray-300 uppercase">
+			<span
+				class="rounded-md bg-black px-2 py-1 text-xs font-semibold text-gray-300 uppercase md:text-sm"
+			>
 				Pts
 			</span>
 		</div>
 	</div>
 
 	<!-- Team Name & Logo -->
-	<div class="mt-5 flex items-center justify-between">
+	<div class="mt-3 flex items-center justify-between md:mt-5">
 		<div class="flex items-center gap-3">
-			<span class="block h-8 w-[6px] rounded-full bg-{team?.color}"></span>
+			<span class="block h-6 w-[6px] rounded-full md:h-8 bg-{team?.color}"></span>
 			<h2 class="text-2xl font-bold text-white">{team?.name}</h2>
 		</div>
-		<img src={team?.logo} class="h-10 w-10 object-contain" alt={`${team?.name} Logo`} />
+		<img
+			src={team?.logo}
+			class="h-8 h-8 object-contain md:h-10 md:w-10"
+			alt={`${team?.name} Logo`}
+		/>
 	</div>
 
 	<!-- Drivers -->
-	<div class="mt-4 grid grid-cols-2 gap-4">
+	<div class="grid grid-cols-2 gap-4 md:mt-4">
 		{#each team?.drivers ?? [] as driver}
 			<div
-				class="flex hidden flex-col items-start rounded-md border border-neutral-700 bg-neutral-800/30 px-3 py-2 text-white md:block"
+				class="flex hidden flex-col items-start rounded-md border border-neutral-700 bg-neutral-800/30 px-3 py-2 text-white hover:scale-102 md:block"
 			>
 				<a href={`/drivers/${driver.name.split(' ')[1]}`}>
 					<span class="text-sm">{driver.name.split(' ')[0]}</span>

@@ -12,9 +12,11 @@
 	});
 </script>
 
-<h2 class="mt-8 mb-2 text-3xl font-extrabold text-gray-200">Team Rankings</h2>
-<p class="mb-6 text-lg text-gray-400">Up-to-date standings of all F1 constructors.</p>
-<div class="flex flex-col gap-3 md:flex-row">
+<h2 class="mt-6 mb-2 text-2xl font-extrabold text-gray-200 md:text-3xl">Team Rankings</h2>
+<p class="mb-6 font-semibold text-gray-400 md:text-lg">
+	Up-to-date standings of all F1 constructors.
+</p>
+<div class="flex flex-col gap-4 md:flex-row md:gap-3">
 	{#each constructors ?? [] as constructor}
 		<ConstructorItem
 			teamKey={constructor.Constructor.name}
